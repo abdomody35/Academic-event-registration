@@ -5,9 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academic Event Registration</title>
   </head>
-  <style></style>
+  <style>
+    form {
+      max-width: 450px;
+      border: lightgray solid 1px;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: black solid 1px;
+      font-size: medium;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    table,
+    td,
+    th {
+      border: lightgray solid 1px;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
   <body>
-    <h1>Event Registration Form</h1>
+    <h2>Event Registration Form</h2>
     <form>
       <label for="name">Name:</label>
       <input id="name" name="name" type="text" required />
@@ -36,7 +72,7 @@
       <br /><br />
       <button type="submit">Register</button>
     </form>
-    <h1>Registered Participants</h1>
+    <h2>Registered Participants</h2>
     <table>
       <thead>
         <tr>
@@ -46,7 +82,20 @@
           <th>Event</th>
         </tr>
       </thead>
-      <tbody id="tableBody"></tbody>
+      <tbody id="tableBody">
+        <tr>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+        <tr>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+      </tbody>
     </table>
   </body>
   <script></script>
