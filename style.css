@@ -1,0 +1,35 @@
+form {
+  max-width: 450px;
+  border: lightgray solid 1px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: black solid 1px;
+  font-size: medium;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+table,
+td,
+th {
+  border: lightgray solid 1px;
+  padding: 10px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

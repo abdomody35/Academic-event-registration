@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Event Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h2>Event Registration Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" name="name" required />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input id="email" name="email" required />
+      <br />
+      <br />
+      <label for="phone">Phone:</label>
+      <input id="phone" name="phone" required />
+      <br />
+      <br />
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="Workshop">Workshop</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Webinar">Webinar</option>
+      </select>
+      <br /><br />
+      <button type="button" onclick="createItem()">Register</button>
+    </form>
+    <h2>Registered Participants</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </body>
+</html>
